@@ -1,2 +1,2 @@
 # Mappo23.github.io
-This page is my personal portfolio
+This is my personal portfolio
