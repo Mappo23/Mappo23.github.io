@@ -41,6 +41,10 @@ p {
     color: #555;
 }
 
+.bold-text {
+    font-weight: bold;
+  }
+
 ul {
     list-style: none;
 }
