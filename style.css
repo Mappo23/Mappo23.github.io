@@ -24,6 +24,15 @@ header {
     padding: 50px 0;
 }
 
+.profile-pic {
+    width: 80px; /* Adjust size as needed */
+    height: 80px;
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures proper cropping */
+    display: block;
+    margin: 0 auto 10px; /* Centers image and adds space below */
+}
+
 h1 {
     font-size: 3em;
     color: #2c3e50;
@@ -163,6 +172,11 @@ footer {
 
     section {
         padding: 30px 0; /* Reduce padding on smaller screens */
+    }
+
+    .profile-pic {
+        width: 60px;
+        height: 60px;
     }
 }
 
