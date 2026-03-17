@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Filippo Banti, Computer Scientist & Data Scientist">
+    <meta name="description" content="Portfolio of Filippo Banti, HPC & Data">
     <title>Filippo Banti Portfolio</title>
     <link rel="icon" href="logo_v3.png" type="image/png">
     <link rel="stylesheet" href="style.css">
@@ -12,7 +12,7 @@
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    gtag('js', new Date());1
 
     gtag('config', 'G-8PMVM29957');
     </script>
@@ -21,16 +21,20 @@
 
     <header>
         <div class="container">
-            <img src="profile.png" alt="Filippo Banti" class="profile-pic">
+            <img src="profile2.png" alt="Filippo Banti" class="profile-pic">
             <h1>Filippo Banti</h1>
-            <p>Data Scientist</p>
+            <p>HPC & Biomedical Data Pipelines</p>
         </div>
     </header>
 
     <section id="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I’m a computer scientist based in Switzerland, specializing in data science. With hands-on experience in developing AI models for healthcare, fintech, and entertainment, I focus on Natural Language Processing (NLP) and Computer Vision. I gained my foundational skills at the University of Perugia, and further honed my expertise in Machine Learning and Deep Learning during my MSc at Universität Bern. Over the years, I’ve worked on numerous projects in these areas.</p>
+            <h2>About Me</h2>            
+            <p>I am a computer scientist based in Switzerland working at the intersection of high-performance computing, data engineering, and biomedical research.</p>
+            <p>In my current role, I manage and operate HPC infrastructure, working extensively with SLURM workloads and distributed file systems such as Lustre. This experience gives me a strong understanding of large-scale systems and the challenges of processing and debugging time-series data in complex environments.</p>
+            <p>Alongside this, I have developed research experience in neuroimaging and machine learning during my time with the SCAN research group at Inselspital Bern, where I worked on deep-learning-based brain MRI segmentation and analysis of large-scale, longitudinal datasets (e.g. <a href="https://rdr.ucl.ac.uk/articles/dataset/EPISURG_a_dataset_of_postoperative_magnetic_resonance_images_MRI_for_quantitative_analysis_of_resection_neurosurgery_for_refractory_epilepsy/9996158?file=26153588">EPISURG</a>).</p>
+            <p>More recently, I have been involved in research on Alzheimer’s disease using <a href="https://adni.loni.usc.edu/">ADNI</a> data, developing modular and reproducible pipelines for neuroimaging processing, radiomic feature extraction, and the generation of analysis-ready datasets for downstream statistical and machine learning studies.</p>
+            <p>I am particularly interested in bridging infrastructure and research by enabling robust, scalable, and reproducible analysis of complex biomedical datasets.</p>
         </div>
     </section>
 
@@ -38,9 +42,11 @@
         <div class="container">                                         
             <h2>Skills</h2>
             <ul>
-                <li><p class="bold-text">Programming languages</p> Python, C, C++, Java, JavaScript, HTML/CSS, R, SQL, MathLab.</li>
-                <li><p class="bold-text">Machine Learning</p> Deep Learning, NLP, Reinforcement Learning, Federated Learning, CNNs, RNNs, Decision Trees, Clustering Algorithms.</li>
-                <li><p class="bold-text">Software and Libraries</p> React, JSON, XML, pandas, polars, PyTorch, TensorFlow, scikit-learn, NLTK, TextBlob, spaCy, OpenCV, ITK, scikit-image, PyRadiomics, FreeSurfer, Nibabel, Unity, Git, Elasticsearch, Metricbeat, Kibana, Grafana, PowerBI, AWS, GCP.</li>
+                <li><p class="bold-text">Programming</p>Python, C/C++, R, SQL, JavaScript, HTML/CSS</li>
+                <li><p class="bold-text">HPC & Monitoring</p>SLURM workload management, Lustre distributed storage, distributed systems, time-series monitoring and logging (i.e. Elasticsearch, Kibana, Grafana)</li>
+                <li><p class="bold-text">Machine Learning & Data Analysis</p>Deep Learning, CNNs, RNNs, statistical modeling, clustering, classification, feature engineering, NLP fundamentals.</li>
+                <li><p class="bold-text">Data Engineering</p>pandas, polars, JSON/XML processing, data pipelines, dataset transformation and validation</li>
+                <li><p class="bold-text">Biomedical Imaging</p>PyTorch, TensorFlow, PyRadiomics, FreeSurfer, NiBabel, ITK, scikit-image, OpenCV</li>
             </ul>
         </div>
     </section>
@@ -48,6 +54,11 @@
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
+            <div class="project2">
+                <h3>Modular MRI Pipeline for Longitudinal Neuroimaging Data</h3>
+                <p>Development of a modular and extensible pipeline for preprocessing and analysis of longitudinal, multi-center brain MRI datasets (e.g. ADNI), designed to handle heterogeneous data sources and enable flexible configuration of processing steps, including cohort selection, biological filtering, normalization, and deep-learning-based segmentation and parcellation; emphasis is placed on reproducibility and data quality through structured outputs, logging, and validation, enabling the generation of standardized, analysis-ready datasets for statistical analysis and machine learning workflows in neurodegenerative disease research.</p>
+                <a href="https://github.com/Mappo23/mri-preprocess-inference-pipeline">View on GitHub</a>
+            </div> 
             <div class="project1">
                 <h3>DL+DiReCT-v8: a lesion-aware DL model for brain segmentation</h3>
                 <p>An automated tool for the segmentation and subsequent morphometric analysis of the human brain using T1-weighted (T1w) MRI images. This tool is designed to effectively process brain scans not only from healthy individuals but also from patients with various neurological conditions, providing valuable insights into structural brain changes.</p>
@@ -58,11 +69,6 @@
                 <p>A study analyzing a publicly available dataset on the ongoing conflict between Russia and Ukraine. The project involved conducting various network analytics and exploratory analyses, including a novel, time-efficient implementation of the Louvain method for detecting community modularity.</p>
                 <a href="https://github.com/ChristopheBroillet/twitter-ukraine-conflict">View on GitHub</a>
             </div>
-            <div class="project2">
-                <h3>Custom Architect Portfolio Website</h3>
-                <p>Implemented a fully responsive portfolio website using HTML, CSS, and Bootstrap. Managed both front-end and back-end development, ensuring seamless functionality. Additionally, I curated the design choices to create an intuitive and visually appealing user experience.</p>
-                <a href="https://github.com/alessandrobanti/alessandrobanti.github.io">View on GitHub</a>
-            </div> 
         </div>
     </section>
 
@@ -75,7 +81,7 @@
 
     <footer>
         <div class="container">
-            <p>© 2025 Filippo Banti. All rights reserved.</p>
+            <p>© 2026 Filippo Banti. All rights reserved.</p>
             <!--<p>Connect with me on <a href="https://linkedin.com/in/yourprofile">LinkedIn</a></p>-->
         </div>
     </footer>
